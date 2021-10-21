@@ -17,6 +17,34 @@ html {
   }
 }
 
+@media only screen and (min-width: 60em) {
+
+  html {
+    font-size: 100%;
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  section {
+    display: grid;
+    grid-template-areas:
+    "li1 li2 li3";
+  }
+
+  ul li:first-child {
+    grid-area: li1;
+  }
+
+  ul li:nth-child(2) {
+    grid-area: li2;
+  }
+
+  ul li:nth-child(3) {
+    grid-area: li3;
+  }
+
+}
+
 *, *::before, *::after {
   box-sizing: inherit;
 }
