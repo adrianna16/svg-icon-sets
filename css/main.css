@@ -9,7 +9,7 @@ html {
   margin: 0;
 }
 
-@media only screen and (min-width: 38em) {
+@media only screen and (min-width: 20em) {
 
   html {
     font-size: 100%;
@@ -17,30 +17,49 @@ html {
   }
 }
 
-@media only screen and (min-width: 60em) {
+@media only screen and (min-width: 38em) {
 
   html {
     font-size: 100%;
     line-height: 1.5;
     text-align: center;
+    padding: .75rem;
+    padding-bottom: 1.5rem;
   }
 
-  section {
+  ul {
     display: grid;
-    grid-template-areas:
-    "li1 li2 li3";
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 6vmin;
+    margin: 1.5rem;
+    padding: 1rem;
   }
 
-  ul li:first-child {
-    grid-area: li1;
+  a {
+    padding-top: 1rem;
   }
 
-  ul li:nth-child(2) {
-    grid-area: li2;
+}
+
+@media only screen and (min-width: 90em) {
+
+  html {
+    font-size: 100%;
+    line-height: 1.5;
+    text-align: center;
+    padding: 1rem;
   }
 
-  ul li:nth-child(3) {
-    grid-area: li3;
+  ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 6vmin;
+    margin: 1.5rem;
+    padding: 1rem;
+  }
+
+  a {
+    padding: 6vmin;
   }
 
 }
