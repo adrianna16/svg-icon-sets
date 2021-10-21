@@ -4,7 +4,17 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
-  font-family: "Overpass", sans-serif;
+  font-family: Overpass, sans-serif;
+  line-height: 1.5;
+  margin: 0;
+}
+
+@media only screen and (min-width: 38em) {
+
+  html {
+    font-size: 100%;
+    line-height: 1.5;
+  }
 }
 
 *, *::before, *::after {
@@ -14,6 +24,9 @@ html {
 body {
   background-image: linear-gradient(to bottom, #ff9500, #ff5e3a);
   color: #fff;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: 0;
 }
 
 section {
@@ -35,6 +48,12 @@ a {
   color: #ff9500;
 }
 
+p {
+  text-align: left;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 div a {
   list-style: none;
   text-decoration: none;
@@ -43,10 +62,17 @@ div a {
   border: 2px solid #fff;
 }
 
+div a:hover {
+  background-color: #fff;
+  color: #ff9500;
+}
+
 .icon {
   position: relative;
   width: 8rem;
   height: 8rem;
+  margin: 0;
+  margin-bottom: -1rem;
 }
 
 .icon svg {
