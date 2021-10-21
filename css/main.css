@@ -4,6 +4,7 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
+  font-family: "Overpass", sans-serif;
 }
 
 *, *::before, *::after {
@@ -11,23 +12,35 @@ html {
 }
 
 body {
-  background-color: #ff9500;
+  background-image: linear-gradient(to bottom, #ff9500, #ff5e3a);
   color: #fff;
 }
 
+section {
+  text-align: center;
+}
+
 ul {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
   justify-items: center;
   margin: 0;
   padding: 0;
+  text-decoration: none;
+  list-style: none;
 }
 
 a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: #ff9500;
+}
+
+div a {
+  list-style: none;
+  text-decoration: none;
   color: #fff;
+  padding: 1rem;
+  border: 2px solid #fff;
 }
 
 .icon {
@@ -42,5 +55,5 @@ a {
   position: absolute;
   top: 0;
   width: 100%;
-  fill: currentColor;
+  fill: #fff;
 }
